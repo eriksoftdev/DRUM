@@ -1,0 +1,109 @@
+/* body {
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+.alignRight {
+  display: grid;
+  gap: 10px;
+  justify-items: right;
+}
+
+.alignLeft {
+  display: grid;
+  gap: 10px;
+}
+
+.pad {
+  height: 200px;
+  width: 75%;
+  border-radius: 10px;
+  border: 4px solid green;
+  display: grid;
+  place-items: center;
+}
+#pad1 {
+  background: red;
+}
+.pad:active {
+  transform: scale(1.1);
+}
+#pad2 {
+  background: orange;
+}
+#pad3 {
+  background: rebeccapurple;
+}
+
+#pad4 {
+  background: blue;
+}
+
+#pad5 {
+  background: yellow;
+}
+#pad6 {
+  background: seagreen;
+}
+
+h1 {
+  color: white;
+}
+ */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  height: 100vh;
+  margin-left: 8%;
+  margin-right: 8%;
+  align-items: center;
+}
+
+.pad {
+  display: grid;
+  place-items: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  height: 90%;
+}
+
+.pad:nth-child(1) {
+  animation-name: colorChange;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes colorChange {
+  0% {
+    background-color: blue;
+  }
+
+  50% {
+    background-color: white;
+  }
+
+  100% {
+    background-color: red;
+  }
+}
+.pad:nth-child(2) {
+  background-color: rebeccapurple;
+}
+
+.pad:nth-child(3) {
+  background-color: yellow;
+}
+
+.pad:nth-child(4) {
+  background-color: springgreen;
+}
